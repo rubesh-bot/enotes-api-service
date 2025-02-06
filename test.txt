@@ -30,3 +30,21 @@ function OptanonWrapper() { }
 <!-- OneTrust Cookies List start -->
 <div id="ot-sdk-cookie-policy"></div>
 <!-- OneTrust Cookies List end -->
+
+
+//debug
+
+console.log("OneTrust script loaded"); // Check if the script is even being included
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM is ready");
+    var otSDKStub = OneTrust.GetStub();
+    console.log("otSDKStub:", otSDKStub); // Check if you get OneTrust object
+
+    if (typeof otSDKStub !== 'undefined') {
+        otSDKStub.embrace();
+        console.log("OneTrust initialized");
+    } else {
+        console.log("OneTrust not available");
+    }
+});
