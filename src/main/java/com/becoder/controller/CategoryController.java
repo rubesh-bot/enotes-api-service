@@ -62,4 +62,16 @@ public class CategoryController {
 
 		return new ResponseEntity<>(categoryDto, HttpStatus.OK);
 	}
+
+	@DeleteMapping("/{id}")
+	public ResponseEntity<?> deleteCategoryById(@PathVariable Integer id){
+		Boolean deleted = categoryService.deleteCategory(id);
+		if(deleted){
+			return new ResponseEntity<>("Category Deleted success", HttpStatus.OK);
+		}
+
+		return  new ResponseEntity<>("Category not deleted", HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+
 }
