@@ -13,3 +13,20 @@ function OptanonWrapper() { }
 <!-- OneTrust Cookies List start -->
 <div id="ot-sdk-cookie-policy"></div>
 <!-- OneTrust Cookies List end -->
+
+//production
+
+<!-- OneTrust Cookies Consent Notice start for eaglebankcorp.com -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="0194c01f-c366-79a9-b811-16745354385f" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for eaglebankcorp.com -->
+
+<!-- OneTrust Cookies Settings button start -->
+<button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
+<!-- OneTrust Cookies Settings button end -->
+
+<!-- OneTrust Cookies List start -->
+<div id="ot-sdk-cookie-policy"></div>
+<!-- OneTrust Cookies List end -->
